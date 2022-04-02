@@ -62,13 +62,6 @@ void Circuit::ShowFinalRanks() {
             int min_total = sec_time / 60;
             int min = min_total % 60;
             int h = min_total / 60;
-            /*
-            int h = int(time);
-            double min_sec = time - h;
-            min_sec *= 60;
-            int min = (int)min_sec;
-            double sec = min_sec - min;
-            int secunde = (int) sec * 60;*/
             printf("%s : %02dh:%02dm:%02ds \n", finish_cars[i]->GetName(),
                 h,min,sec);
         }
